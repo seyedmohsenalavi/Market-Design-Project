@@ -1,0 +1,24 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{12}{c}}
+\caption{Robustness check \label{reg2}}\\
+\toprule\endfirsthead\midrule\endhead\midrule\endfoot\endlastfoot
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}&\multicolumn{1}{c}{(8)}&\multicolumn{1}{c}{(9)}&\multicolumn{1}{c}{(10)}&\multicolumn{1}{c}{(11)}&\multicolumn{1}{c}{(12)}\\
+                &\multicolumn{1}{c}{T1}&\multicolumn{1}{c}{T2}&\multicolumn{1}{c}{T3}&\multicolumn{1}{c}{T4}&\multicolumn{1}{c}{T5}&\multicolumn{1}{c}{T6}&\multicolumn{1}{c}{T7}&\multicolumn{1}{c}{T8}&\multicolumn{1}{c}{T9}&\multicolumn{1}{c}{T10}&\multicolumn{1}{c}{T11}&\multicolumn{1}{c}{T12}\\
+Log(WinPrice)   &                  &                  &                  &                  &                  &                  &                  &                  &                  &                  &                  &                  \\
+\midrule
+N. of bid       &    0.056\sym{***}&    0.060\sym{***}&    0.026         &    0.010         &    0.223         &    0.046\sym{***}&    0.050\sym{***}&   -0.032         &    0.039\sym{***}&    0.124\sym{***}&    0.057\sym{***}&    0.057\sym{***}\\
+                &   (0.01)         &   (0.00)         &   (0.10)         &   (0.02)         &   (0.20)         &   (0.00)         &   (0.00)         &   (0.05)         &   (0.00)         &   (0.01)         &   (0.01)         &   (0.02)         \\
+Log(value)      &    0.898\sym{***}&    0.931\sym{***}&    0.885\sym{***}&    0.999\sym{***}&    0.981\sym{***}&    0.926\sym{***}&    0.900\sym{***}&    0.949\sym{***}&    0.838\sym{***}&    0.767\sym{***}&    0.908\sym{***}&    0.847\sym{***}\\
+                &   (0.05)         &   (0.01)         &   (0.08)         &   (0.04)         &   (0.15)         &   (0.01)         &   (0.02)         &   (0.05)         &   (0.01)         &   (0.04)         &   (0.02)         &   (0.10)         \\
+\midrule
+Group FE        &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Ostan FE        &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Type FE         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Winner FE       &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+N. of Obs       &      314         &     2623         &      247         &      266         &      219         &     2434         &     1758         &      172         &     1933         &      713         &     1354         &      327         \\
+\bottomrule
+\multicolumn{13}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{13}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{longtable}
+}

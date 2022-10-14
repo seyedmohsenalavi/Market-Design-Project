@@ -1,0 +1,28 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{6}{c}}
+\caption{OLS regression with fixed effects \label{reg1}}\\
+\toprule\endfirsthead\midrule\endhead\midrule\endfoot\endlastfoot
+                &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                &\multicolumn{1}{c}{OLS}&\multicolumn{1}{c}{FE}&\multicolumn{1}{c}{FE}&\multicolumn{1}{c}{FE}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Nauc=1}\\
+Log(WinPrice)   &                  &                  &                  &                  &                  &                  \\
+\midrule
+N. of bid       &    0.050\sym{***}&    0.049\sym{***}&    0.050\sym{***}&    0.050\sym{***}&    0.056\sym{***}&    0.053\sym{***}\\
+                &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         \\
+Log(value)      &    0.906\sym{***}&    0.897\sym{***}&    0.901\sym{***}&    0.897\sym{***}&    0.945\sym{***}&    0.904\sym{***}\\
+                &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         &   (0.00)         \\
+\midrule
+Group FE        &       No         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Ostan FE        &       No         &      Yes         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Type FE         &       No         &       No         &      Yes         &      Yes         &      Yes         &      Yes         \\
+Winner FE       &       No         &       No         &       No         &      Yes         &       No         &      Yes         \\
+N. of Obs       &    12360         &    12360         &    12360         &    12360         &    12360         &    11731         \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Notes: Type FE: categorical dummy var. for 12 categories of objects,}\\
+\multicolumn{7}{l}{\footnotesize Group FE: categorical var. for categories of auctions, Ostan FE: Province FE,}\\
+\multicolumn{7}{l}{\footnotesize Winner FE: Winning bidder's FE. Median: Quantile reg. for dep. var's Median.}\\
+\multicolumn{7}{l}{\footnotesize Nauc=1: only non-recurring auctions have been considered.}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.1\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{longtable}
+}
